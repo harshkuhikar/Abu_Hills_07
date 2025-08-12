@@ -168,24 +168,24 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/85 via-emerald-900/30 to-transparent"></div>
 
         <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto animate-modern-float">
-          <div className="flex items-center justify-center mb-6 space-x-4">
-            <Crown className="w-12 h-12 text-emerald-300 animate-pulse" />
+          <div className="flex items-center justify-center mb-1 md:mb-6 space-x-4">
+            <Crown className="w-6 h-12 md:w-12 text-emerald-300 animate-pulse" />
             <div className="flex space-x-1">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
-                  className="w-6 h-6 text-emerald-300 fill-current"
+                  className="w-3 h-6 md:w-6 text-emerald-300 fill-current"
                 />
               ))}
             </div>
-            <Award className="w-12 h-12 text-emerald-300" />
+            <Award className="w-6 h-12 md:w-12 text-emerald-300" />
           </div>
 
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-emerald-200 via-white to-rose-200 bg-clip-text text-transparent text-glow-modern animate-minimalistic-float">
+          <h1 className="text-3xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-emerald-200 via-white to-rose-200 bg-clip-text text-transparent text-glow-modern animate-minimalistic-float">
             ABU HILLS
           </h1>
 
-          <p className="text-2xl md:text-3xl mb-4 text-emerald-100 font-light tracking-wide">
+          <p className="text-xl md:text-2xl mb-4 text-emerald-100 font-light tracking-wide">
             Luxury Weekend Homes
           </p>
 
@@ -209,17 +209,35 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Link
               to="/contact"
-              className="btn-modern group px-8 py-4 text-white rounded-2xl font-semibold text-lg transform hover:scale-105 transition-all duration-300 animate-minimalistic-shimmer"
+              className="
+    btn-modern group 
+    px-6 py-3 text-base 
+    sm:px-8 sm:py-4 sm:text-lg
+    text-white rounded-2xl font-semibold 
+    transform hover:scale-105 transition-all duration-300 
+    animate-minimalistic-shimmer
+  "
             >
-              <Calendar className="w-5 h-5 mr-2" />
+              <Calendar className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Schedule Visit
-              <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
+
             <button
               onClick={handleDownloadBrochure}
-              className="glass-premium group px-8 py-4 border-2 border-white/30 text-white rounded-2xl font-semibold text-lg hover:bg-white/20 hover:border-white/50 transform hover:scale-105 transition-all duration-300 animate-minimalistic-glow"
+              className="flex
+              items-center justify-center
+    glass-premium group
+    px-6 py-3 text-base
+    sm:px-8 sm:py-4 sm:text-lg
+    border-2 border-white/30 text-white 
+    rounded-2xl font-semibold 
+    hover:bg-white/20 hover:border-white/50 
+    transform hover:scale-105 transition-all duration-300 
+    animate-minimalistic-glow
+  "
             >
-              <Download className="w-5 h-5 mr-2" />
+              <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Download Brochure
             </button>
           </div>
