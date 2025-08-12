@@ -341,52 +341,62 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-800 to-neutral-900">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Contact Vinayak Realty
-            </h2>
-            <p className="text-xl text-emerald-200 max-w-3xl mx-auto">
-              Ready to experience luxury living? Get in touch with our expert
-              team today.
-            </p>
-          </div>
+      <section className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          {/* Heading */}
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            Contact Vinayak Realty
+          </h2>
+          <p className="text-lg text-gray-600 mb-12">
+            Ready to experience luxury living? Get in touch with our expert team
+            today.
+          </p>
 
-          <div className="grid-modern">
-            <div className="card-aesthetic p-8 bg-gradient-to-br from-emerald-700 to-emerald-800 rounded-2xl text-center animate-minimalistic-glow">
-              <Phone className="w-12 h-12 text-emerald-300 mx-auto mb-6" />
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Call Us</h3>
-              <a
-                href="tel:+919327586040"
-                className="text-emerald-300 hover:text-emerald-200 text-lg font-semibold transition-colors"
-              >
-                +91-93275-860-40
-              </a>
-            </div>
+          {/* Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Phone */}
+            <a
+              href="tel:+919825066074"
+              className="relative p-8 rounded-2xl text-center bg-gradient-to-br from-emerald-700 to-emerald-800 shadow-lg hover:shadow-emerald-500/30 transition-all duration-500 group overflow-hidden block"
+            >
+              <Phone className="w-14 h-14 text-emerald-300 mx-auto mb-6" />
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-emerald-200 transition-colors">
+                Call Us
+              </h3>
+              <p className="text-emerald-100 hover:text-white text-lg font-semibold transition-colors duration-300">
+                +91 98250 66074
+              </p>
+            </a>
 
-            <div className="card-aesthetic p-8 bg-gradient-to-br from-emerald-700 to-emerald-800 rounded-2xl text-center animate-minimalistic-glow">
-              <Mail className="w-12 h-12 text-emerald-300 mx-auto mb-6" />
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+            {/* Email */}
+            <a
+              href="mailto:info@abuhills.com"
+              className="relative p-8 rounded-2xl text-center bg-gradient-to-br from-emerald-700 to-emerald-800 shadow-lg hover:shadow-emerald-500/30 transition-all duration-500 group overflow-hidden block"
+            >
+              <Mail className="w-14 h-14 text-emerald-300 mx-auto mb-6" />
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-emerald-200 transition-colors">
                 Email Us
               </h3>
-              <a
-                href="mailto:info@abuhills.com"
-                className="text-emerald-300 hover:text-emerald-200 text-lg font-semibold transition-colors"
-              >
+              <p className="text-emerald-100 hover:text-white text-lg font-semibold transition-colors duration-300">
                 info@abuhills.com
-              </a>
-            </div>
+              </p>
+            </a>
 
-            <div className="card-aesthetic p-8 bg-gradient-to-br from-emerald-700 to-emerald-800 rounded-2xl text-center animate-minimalistic-glow">
-              <MapPin className="w-12 h-12 text-emerald-300 mx-auto mb-6" />
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+            {/* Location */}
+            <a
+              href="https://www.google.com/maps/place/Mount+Abu,+Rajasthan+307501" // Replace with your actual location link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative p-8 rounded-2xl text-center bg-gradient-to-br from-emerald-700 to-emerald-800 shadow-lg hover:shadow-emerald-500/30 transition-all duration-500 group overflow-hidden block"
+            >
+              <MapPin className="w-14 h-14 text-emerald-300 mx-auto mb-6" />
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-emerald-200 transition-colors">
                 Visit Us
               </h3>
-              <p className="text-emerald-200 text-lg">
+              <p className="text-emerald-100 hover:text-white text-lg font-semibold transition-colors duration-300">
                 Abu Hills, Premium Location
               </p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
