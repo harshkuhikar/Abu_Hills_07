@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, Crown, Phone, Mail } from "lucide-react";
+import { Menu, X, ChevronDown, Crown } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -100,46 +100,13 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Contact Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => handleDropdownToggle("contact")}
+            <div>
+              <Link
+                to="/contact"
                 className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-emerald-700 hover:bg-emerald-50 transition-all duration-300"
               >
-                Contact
-                <ChevronDown
-                  className={`ml-1 h-4 w-4 transition-transform duration-200 ${
-                    activeDropdown === "contact" ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {activeDropdown === "contact" && (
-                <div className="dropdown-luxury absolute top-full left-0 mt-1 w-48 z-50">
-                  <Link
-                    to="/contact"
-                    onClick={closeDropdown}
-                    className="dropdown-item-luxury"
-                  >
-                    Contact Us
-                  </Link>
-                  <a
-                    href="tel:+919327586040"
-                    onClick={closeDropdown}
-                    className="dropdown-item-luxury"
-                  >
-                    <Phone className="h-4 w-4 mr-2" />
-                    Call Now
-                  </a>
-                  <a
-                    href="mailto:info@abuhills.com"
-                    onClick={closeDropdown}
-                    className="dropdown-item-luxury"
-                  >
-                    <Mail className="h-4 w-4 mr-2" />
-                    Email Us
-                  </a>
-                </div>
-              )}
+                Contact Us
+              </Link>
             </div>
 
             {/* CTA Button */}
