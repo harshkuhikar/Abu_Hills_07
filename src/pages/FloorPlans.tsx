@@ -16,6 +16,10 @@ import {
   TreePine,
 } from "lucide-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import img1 from "../Abu_Photos/Abu_01.jpg";
+import img2 from "../Abu_Photos/Abu_02.jpg";
+import img3 from "../Abu_Photos/Abu_03.jpg";
+import img4 from "../Abu_Photos/Abu_04.jpg";
 
 interface FloorPlan {
   id: number;
@@ -44,8 +48,7 @@ const FloorPlans = () => {
     {
       id: 1,
       title: "Serenity Villa - Ground Floor",
-      image:
-        "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      image: img1,
       description:
         "Spacious ground floor with open living concept and modern amenities",
       area: "1320 SQ. FT",
@@ -68,8 +71,7 @@ const FloorPlans = () => {
     {
       id: 2,
       title: "Serenity Villa - First Floor",
-      image:
-        "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      image: img2,
       description: "Upper floor with private bedrooms and luxury bathrooms",
       area: "1320 SQ. FT",
       bedrooms: 3,
@@ -91,8 +93,7 @@ const FloorPlans = () => {
     {
       id: 3,
       title: "Harmony Villa - Ground Floor",
-      image:
-        "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      image: img3,
       description: "Contemporary ground floor with premium finishes",
       area: "1450 SQ. FT",
       bedrooms: 2,
@@ -114,8 +115,7 @@ const FloorPlans = () => {
     {
       id: 4,
       title: "Harmony Villa - First Floor",
-      image:
-        "https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      image: img4,
       description: "Elegant upper floor with panoramic views",
       area: "1450 SQ. FT",
       bedrooms: 3,
